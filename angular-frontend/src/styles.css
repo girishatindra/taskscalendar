@@ -1,0 +1,288 @@
+html, body { height: 100%; }
+
+*{box-sizing: border-box;}
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+h1{
+    font-family: "Suez One", serif;
+}
+
+.main-container{
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.main-title{
+    filter:drop-shadow(1px 1px 3px rgb(186, 185, 185));
+}
+
+input{
+  margin:5px;
+  padding:3px;
+  border:2px solid;
+  font-family: "Bebas Neue", sans-serif;
+
+}
+button{
+  margin:5px;
+  padding:5px;
+  background:white;
+  color:black;
+  border:1px solid;
+  border-radius:5px;
+  box-shadow:0px 3px 0px 0px black;
+  transition: all 200ms;
+  font-family: "New Amsterdam", sans-serif;
+  font-size: 20px;
+
+}
+
+button:hover{
+  cursor:pointer;
+  color:rgb(255, 77, 0);
+  border-color:black;
+}
+
+button:active{
+  box-shadow:none;
+}
+
+.note{
+  width:auto;  
+  height:auto;
+  border:1px solid;
+  border-radius:10px;
+  position:relative;
+  margin:10px;
+  box-shadow:0px 3px 0px 0px black;
+
+}
+
+.note-cls{
+  position:absolute;
+  top:0;
+  right:0;
+  height:25px;
+  width:25px;
+  margin:5px;
+  border:2px solid;
+  border-radius:50%;
+  text-align:center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.note-cls:hover{
+  cursor:pointer;
+}
+
+.note > h2{
+  text-align:center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 30px;
+}
+
+.note div{
+  margin-top:20px;
+}
+
+.note div > *{
+  display:inline-block;
+  margin:10px;
+}
+
+.note-btns > h3{
+  padding:5px;
+  background:white;
+  color:black;
+  border:1px solid;
+  border-radius:5px;
+  box-shadow:0px 3px 0px 0px black;
+  animation:button 2s infinite alternate-reverse ease; 
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: normal;
+
+}
+
+.note-btns span > span{
+  color:rgb(255, 77, 0);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.note-btns span{
+  font-family: "Inconsolata", monospace !important;
+  font-weight: 200;
+}
+
+.note h2 > span{
+  color:rgb(255, 77, 0);
+}
+
+.note h1{
+  text-align:center;
+  font-family: "Vast Shadow", serif;
+  font-weight: normal;
+  text-shadow:1px 1px 2px black;
+}
+
+.note .note-btns:nth-of-type(1) > h3{
+  animation-delay:1s;
+}
+
+.note .note-btns:nth-of-type(2) > h3{
+  animation-delay:1.5s;
+}
+
+.note .note-btns:nth-of-type(3) > h3{
+  animation-delay:1.8s;
+}
+
+@keyframes button{
+  0%{background:white;
+  color:black;
+  border:1px solid;
+  border-radius:5px;
+  box-shadow:0px 3px 0px 0px black;}
+  50%{
+  background:white;
+  color:black;
+  border:1px solid;
+  border-radius:5px;
+  box-shadow:0px 3px 0px 0px black;
+  }
+  100%{
+  box-shadow:none;
+  color:rgb(255, 77, 0);
+  border-color:black;
+  }
+}
+
+.calendar{
+  height:auto;
+  width:75%;
+  border:0px solid; 
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(100px,1fr));
+  grid-template-rows:auto;
+  padding:20px;
+  padding-left:30px;
+  padding-right:30px;
+  margin-top:30px;
+  gap:5px;
+  border-radius: 30px;
+  box-shadow:1px 1px 10px 0px rgb(186, 185, 185);
+}
+.date{
+  height:100px;
+  width:100px;
+  background:white;
+  border:1px solid;
+  padding:0;
+  margin:5px;
+  position:relative;
+  pointer-events:none;
+  cursor:pointer;
+}
+
+.title-date{
+  position:absolute;
+  font-size:20px;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  font-family: "New Amsterdam", sans-serif;
+  color:red;
+}
+
+.title-month{
+  position:absolute;
+  left:0;
+  top:0;
+  margin:5px;
+  font-family: "Bebas Neue", sans-serif;
+
+}
+
+.title-year{
+  position:absolute;
+  right:0;
+  top:0;
+  margin:5px;
+  font-family: "Bebas Neue", sans-serif;
+
+}
+
+.title-day{
+  position:absolute;
+  left:50%;
+  top:60%;
+  transform:translateX(-50%);
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.date > *{
+  pointer-events:none;
+}
+
+
+
+table{
+    border:collapse;
+    width:65%;
+    margin-top:50px;
+    display:table;
+  }
+
+  tr{
+    width:65%;
+  }
+
+  th,td{
+    width:50%;
+    border:0px solid;
+    text-align:center;
+    margin:0;
+  }
+  th{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+  }
+
+  td{
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 17px;
+  }
+
+  td:hover{
+    cursor:pointer;
+    color:orangered;
+  }
+
+  tr:nth-child(odd){
+    background:rgb(227, 225, 225);
+  }
+  tr:nth-child(even){
+    background:rgb(157, 148, 148);
+  }
+
+
+  .red-snackbar{
+    --mdc-snackbar-container-color: red;
+  }
+
+  .green-snackbar{
+    --mdc-snackbar-container-color: green;
+  }
+
+
+.dialog-box{
+  padding:50px;
+}
+
+

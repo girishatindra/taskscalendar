@@ -1,0 +1,59 @@
+<div class="main-container">
+  <div class="main-title">
+    <img src="../assets/task_logo.png"/>
+  </div>
+  <div class="inuputs">
+  <input type="text" name="task_name" #task_name placeholder="task name"/>
+  <input minlength="1" type="number" name="end_date" #end_date placeholder="end date"/>
+  </div>
+  <div class="note">
+    <div class="note-btns">
+    <h3>Show</h3><span><span>Shows</span> the pre-created task, if no input is given it returns a list of all completed and on going tasks</span>
+    </div>
+    <div class="note-btns">
+    <h3>Generate</h3><span><span>Generates</span> a new calendar, if used on an existing task it will overwrite the old calendar with a new one</span>
+    </div>
+    <div class="note-btns">
+    <h3>Remove</h3><span><span>Removes</span> the task</span>
+    </div>
+    <h2>Enter The <span>Task Name</span> And <span>Number Of Days</span> You Are Going To Perform It </h2>
+    <h1>MADE BY ATINDRA GIRISH</h1>
+    <button class="note-cls" (click)="close(true)"><span>X</span></button>
+  </div>
+  <div class="btns">
+  <button matRipple (click)="GenerateCalendar(end_date.value,task_name.value)">Generate</button>
+  <button matRipple (click)="removeTask(task_name.value)">Remove</button>
+  <button matRipple (click)="fetchTask(task_name.value)">Show</button>
+  </div>
+
+@if(dates.length != 0){
+<div class="calendar">
+@for (date of dates; track $index) {
+  <div matRipple class="date" (click)="clickDates($index,$event)">
+    <span class="title-date">{{date.date}}</span>
+    <span class="title-day">{{date.day}}</span>
+    <span class="title-month">{{date.month}}</span>
+    <span class="title-year">{{date.year}}</span>
+  </div>
+}
+</div>
+}
+    @if(completed.length != 0 || on_going.length != 0){
+    <table>
+      <tr><th colspan="2" style="background-color: black; color:white;">TASKS</th></tr>
+      <tr>
+        <th style="background-color: tomato;">On Going</th>
+        <th style="background-color: lightgreen;">Completed</th>
+      </tr>
+      
+      @for ( name of on_going; track $index){
+        <tr>
+        <td matRipple (click)="fetchTask(name)">{{name || ""}}</td>
+        <td matRipple (click)="fetchTask(completed[$index])">{{completed[$index] || ""}}</td>
+        </tr>
+      }      
+     
+    </table>
+    }
+  
+  </div>

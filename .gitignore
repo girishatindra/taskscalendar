@@ -1,0 +1,21 @@
+# IDE/Editor settings
+.vscode/
+
+# Icon or binary artifacts
+taskcalendar.ico
+
+# Node.js (Angular frontend)
+angular-frontend/node_modules/
+angular-frontend/dist/
+angular-frontend/.angular/
+
+# Python/Flask backend
+flask-backend/__pycache__/
+flask-backend/*.pyc
+flask-backend/*.spec
+flask-backend/build/
+flask-backend/dist/
+
+
+
+
