@@ -1,6 +1,6 @@
 <div align="center">
   
-[![task_logo](https://github.com/user-attachments/assets/4b0648f9-7d91-411a-ace4-a0685ea12a0e)](#)
+[![task_logo](/docs/logo.png)](#)
 
 [![Angular Frontend](https://img.shields.io/badge/Angular-Frontend-skyblue?style=for-the-badge&logo=angular&labelColor=tomato)](https://angular.dev)
 [![Flask Backend](https://img.shields.io/badge/Flask-Backend-skyblue?style=for-the-badge&logo=flask&labelColor=tomato)](https://flask.palletsprojects.com/en/stable/)
@@ -19,7 +19,7 @@
 Ever struggled to keep track of your habits or challenges?
 Were you ever too busy or distracted to mark your calendar and lost your progress?
 **TasksCalendar** is your solution.
-[![Demo Video](https://github.com/user-attachments/assets/ebc92e14-cb06-4493-bb7b-da1f72864851)](#)
+[![Demo Video](/docs/demo-thumbnail.png)](#)
 It allows you to generate a personalized calendar like a *21-day workout challenge* and mark each day as:
 - :ballot_box_with_check: Completed
 - :negative_squared_cross_mark: Missed
@@ -106,7 +106,7 @@ You can install the executable directly from the Releases page.
         
 3. Run taskcalendar.exe
    > A console window will appear displaying the Flask server output. You can `Ctrl + Click` the URL or copy and paste it into your browser to open the UI
-   [![Executing taskscalendar.exe](https://github.com/user-attachments/assets/8c62080a-455b-420a-aafa-4491f46445f5)](#)
+   [![Executing taskscalendar.exe](/docs/executable.gif)](#)
 
 <br>
 
@@ -160,19 +160,19 @@ In TaskCalendar you can easily:
 ### Create Tasks
 >To create a task or generate a calendar simply enter the task name and the number of days you wish to track it for and click `generate`
 >
->![task-creation-taskcalendar](https://github.com/user-attachments/assets/27b5ba83-cce5-4df1-81f8-59a9d593372b)
+>![task-creation-taskcalendar](/docs/task-creation.gif)
 
 
 ### Mark Dates
 > You can mark a date as completed(green), missed(red) or default(white). Clicking on the date at default state sets it to completed, click again and it is marked as missed, click once again and its marked as default.
 > 
-> [![marking-dates-taskcalendar](https://github.com/user-attachments/assets/2b8c5aef-1ee7-42ba-ad23-3a904b741dfe)](#)
+> [![marking-dates-taskcalendar](/docs/dates.gif)](#)
 
 
 ### View All Tasks
 > You can view all the ongoing and completed task by clicking on the `show` button, this will show all the tasks in a table format.
 >
-> [![show-all-taskcalendar](https://github.com/user-attachments/assets/0331efc0-a290-4552-9b62-4450640a16ed)](#)
+> [![show-all-taskcalendar](/docs/all-tasks-view.gif)](#)
 
 
 ### Access Tasks
@@ -180,7 +180,7 @@ In TaskCalendar you can easily:
 > - you can click `show` to view all tasks and then click on the specific task name you want to access from the table
 > - you can enter the task name and click `show`
 >
-> [![access-tasks-taskcalendar](https://github.com/user-attachments/assets/a526e0d0-3887-4997-a4b5-0ce844d7bfea)](#)
+> [![access-tasks-taskcalendar](/docs/view-task.gif)](#)
 
 >[!NOTE]
 > If you ever forget to mark the dates the next time you access the task all those dates will be automatically marked as missed
@@ -189,7 +189,7 @@ In TaskCalendar you can easily:
 ### Delete Tasks
 > To delete a task enter the task name and click `delete`, you will prompted to confirm or cancel the deletion
 >
-> [![deleting-tasks-taskcalendar](https://github.com/user-attachments/assets/6c29a5f7-03f3-433a-b68b-6dfc395d0640)](#)
+> [![deleting-tasks-taskcalendar](/docs/remove-task.gif)](#)
 
 >[!WARNING]
 >Do not delete the `json` files manually instead use the UI to remove the task and the associated json file, Avoid deleting or manupilating the `tasks.txt` in any way
@@ -198,7 +198,7 @@ In TaskCalendar you can easily:
 ### Regenerate Tasks
 > If you broke your streak and want to start again, enter the task name the new number of days and click `generate`, you will be prompted if you want to regenerate or cancel
 >
-> [![regenrating-tasks-taskcalendar](https://github.com/user-attachments/assets/8dbe52c2-0b0b-4929-b98b-fa336812feaf)](#)
+> [![regenrating-tasks-taskcalendar](/docs/regenerate-task.gif)](#)
 
 <br>
 
