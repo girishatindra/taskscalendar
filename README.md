@@ -210,7 +210,7 @@ In TaskCalendar you can easily:
 
 <br>
 
-[![Progress Bar](https://progress-bar.xyz/0/?title=PROGRESS&style=for-the-badge)](#)
+[![Progress Bar](https://progress-bar.xyz/0/?title=completed&style=for-the-badge)](#)
 
 <br>
 
