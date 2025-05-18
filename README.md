@@ -119,7 +119,7 @@ You can install the executable directly from the Releases page.
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/girishatindra@gmail.com/taskcalendar.git
+   git clone https://github.com/girishatindra/taskcalendar.git
    cd taskcalendar
    ```
 
