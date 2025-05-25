@@ -224,4 +224,4 @@ Have questions, feedback, or suggestions?
 Feel free to reach out:
 
 - [![Gmail](https://img.shields.io/badge/gmail-girishatindra@gmail.com-white?style=social&logo=gmail)](mailto:girishatindra@gmail.com)
-- [![Github Issue](https://img.shields.io/badge/Github-Open_an_issue_for_bugs_or_feature_requests-white?style=social&logo=github)](#)
+- [![Github Issue](https://img.shields.io/badge/Github-Open_an_issue_for_bugs_or_feature_requests-white?style=social&logo=github)](https://github.com/girishatindra/taskscalendar/issues)
