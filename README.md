@@ -211,7 +211,7 @@ In TaskCalendar you can easily:
 
 <div align="center">
 
-[![Progress Bar](https://progress-bar.xyz/0/?title=completed&style=for-the-badge&width=100&color=177fff)](#)
+[![Progress Bar](https://progress-bar.xyz/0/?title=completed&style=for-the-badge)](#)
 [![Project Status](https://img.shields.io/badge/project_status-MVP-blue?style=for-the-badge&labelColor=brightgreen)](#)
 
 </div>
