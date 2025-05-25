@@ -19,7 +19,7 @@
 Ever struggled to keep track of your habits or challenges?
 Were you ever too busy or distracted to mark your calendar and lost your progress?
 **TasksCalendar** is your solution.
-[![Demo Video](/docs/demo-thumbnail.png)](#)
+[![Demo Video](/docs/demo-thumbnail.png)](https://www.youtube.com/watch?v=0h0AHzNDsoc)
 It allows you to generate a personalized calendar like a *21-day workout challenge* and mark each day as:
 - :ballot_box_with_check: Completed
 - :negative_squared_cross_mark: Missed
@@ -119,31 +119,30 @@ You can install the executable directly from the Releases page.
 1. Clone the repository
 
    ```bash
-   git clone https://github.com/girishatindra/taskcalendar.git
-   cd taskcalendar
+   git clone https://github.com/girishatindra/taskscalendar.git
+   cd taskscalendar
    ```
 
 2. Setup flask backend
 
     ```bash
       cd flask-backend
-      pip install -r requirements
-      python app
+      pip install -r requirements.txt
+      python app.py
     ```
 
-3. Install angular cli
+3. Setup angular-frontend (*in a new terminal*)
 
    ```bash
-    npm install -g @angular/cli
-   ```
-
-4. Setup angular-frontend
-
-   ```bash
-    cd ../angular-frontend
+    cd angular-frontend
     npm install
     ng serve
    ```
+<br>
+
+> ![Building From Source](/docs/building-from-source.gif)
+>
+
 <br>
 
 ## :wrench: Usage
@@ -164,20 +163,20 @@ In TaskCalendar you can easily:
 
 
 ### Mark Dates
-> You can mark a date as completed(green), missed(red) or default(white). Clicking on the date at default state sets it to completed, click again and it is marked as missed, click once again and its marked as default.
+> You can mark a date as completed(green), missed(red) or default(white). Clicking on the date at default state sets it to completed, click again and it is marked as missed, click once again and it is back to default.
 > 
 > [![marking-dates-taskcalendar](/docs/dates.gif)](#)
 
 
 ### View All Tasks
-> You can view all the ongoing and completed task by clicking on the `show` button, this will show all the tasks in a table format.
+> You can view all the ongoing and completed tasks by clicking on the `show` button, this will show all the tasks in a table format, remember to leave the task name input field empty before clicking `show`
 >
 > [![show-all-taskcalendar](/docs/all-tasks-view.gif)](#)
 
 
 ### Access Tasks
 > The tasks can be accessed in two ways
-> - you can click `show` to view all tasks and then click on the specific task name you want to access from the table
+> - you can click `show` to view all tasks and then click on the specific task name you want to access from the table, remember to leave the task name input field empty before clicking `show`
 > - you can enter the task name and click `show`
 >
 > [![access-tasks-taskcalendar](/docs/view-task.gif)](#)
@@ -210,11 +209,12 @@ In TaskCalendar you can easily:
 
 <br>
 
-[![Progress Bar](https://progress-bar.xyz/0/?title=completed&style=for-the-badge)](#)
+<div align="center">
 
-<br>
-
+[![Progress Bar](https://progress-bar.xyz/0/?title=completed&style=for-the-badge&width=100&color=177fff)](#)
 [![Project Status](https://img.shields.io/badge/project_status-MVP-blue?style=for-the-badge&labelColor=brightgreen)](#)
+
+</div>
 
 <br>
 
