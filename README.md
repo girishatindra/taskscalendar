@@ -98,11 +98,12 @@ Installing TasksCalendar is simple. Users have two options:
 ### :desktop_computer: Executable
 You can install the executable directly from the Releases page.
 
-1. Download the latest :file_folder:`.zip` file from the Releases section.
+1. Download the latest :file_folder:`taskscalendar.zip` file from the [Releases](https://github.com/girishatindra/taskscalendar/releases/tag/v1.0.0-beta) section.
    
 2. Extract the contents. You’ll find:
       - **taskcalendar.exe** – *the standalone application*
       - **tasks.txt** – *used to track tasks*
+      - **workout.json** - *includes the calendar details in json format of the task*
         
 3. Run taskcalendar.exe
    > A console window will appear displaying the Flask server output. You can `Ctrl + Click` the URL or copy and paste it into your browser to open the UI
